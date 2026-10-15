@@ -7,7 +7,7 @@ import java.time.format.DateTimeFormatter;
 public class FoodItem {
     private String name;
     private double weight; //weight in grams
-    private LocalDate bestBefore; //Max two weeks
+    private LocalDate bestBefore; //Max two weeks after Todays date
     private LocalDateTime timePlaced;
     
     //======Constructor====
@@ -17,16 +17,16 @@ public class FoodItem {
         this.bestBefore = bestBefore;
         this.timePlaced = LocalDateTime.now();
     }
-    
+    //=======Getters==== 
     public String getName(){
         return name;
     }
     
-    public double getweight(){
+    public double getWeight(){
         return weight;
     }
     
-    public LocalDate getbestBefore(){
+    public LocalDate getBestBefore(){
         return bestBefore;
     }
     
